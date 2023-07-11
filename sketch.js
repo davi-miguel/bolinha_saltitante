@@ -52,11 +52,12 @@ function setup(){
     // Code for ball
     var ball_options ={
         ///escreva o código para adicionar restituição à bola
-        restitution: 2.6,
+        frictionAir: 0.0005,
+        restitution: 0.8,
     }
     ball = Bodies.circle(590,100,20,ball_options);
     //escreva o código para adicionar o objeto
-    
+    World.add(myworld,ball);
 
 }
 
